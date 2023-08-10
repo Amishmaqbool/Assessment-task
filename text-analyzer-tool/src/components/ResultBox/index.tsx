@@ -1,6 +1,7 @@
+import { pronouns } from '../../data/pronouns'
 import './index.scss'
 
-const ResultBox = ({worldLength}:any) => {
+const ResultBox = ({worldLength , characters , sentences , paragraph , pronouns}:any) => {
   const resultBar = [
     {
       title: 'Words',
@@ -8,19 +9,19 @@ const ResultBox = ({worldLength}:any) => {
     },
     {
       title: 'Characters',
-      value: 0,
+      value:  characters,
     },
     {
       title: 'Sentences',
-      value: 0,
+      value: sentences,
     },
     {
       title: 'Paragraphs ',
-      value: 0,
+      value: paragraph,
     },
     {
       title: 'Pronouns',
-      value: 0,
+      value: pronouns,
     },
   ]
 
