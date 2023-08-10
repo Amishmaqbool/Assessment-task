@@ -1,10 +1,10 @@
 import './index.scss'
 
-const ResultBox = () => {
+const ResultBox = ({worldLength}:any) => {
   const resultBar = [
     {
       title: 'Words',
-      value: 0,
+      value: worldLength,
     },
     {
       title: 'Characters',
